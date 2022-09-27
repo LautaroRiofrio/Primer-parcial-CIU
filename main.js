@@ -28,8 +28,6 @@ const cambiarModo = () => {
     card_contacto.classList.toggle('card-contacto-claro');
     footer.classList.toggle('footer-claro');
     modo_btn.classList.toggle('modo-claro');
-    // card_contacto.style.background = "#BFBFBF";
-    // card_contacto.style.color = "#000"
 }
 
 ul.addEventListener('click', (e) => {
