@@ -1,0 +1,317 @@
+
+:root{
+    --header-height: 75px;
+    --font-family: "Gothic A1";
+
+    /* paleta de colores */
+
+    --color1:#262626 ; /*gris oscuro*/
+    --color2: #3A3A3A; /*gris claro*/
+    --color3: #B68E53; /*mostasa oscuro*/
+    --color4: #D1B994; /*mostasa claro*/
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------------- */
+/*                  GENERAL                     */
+/* -------------------------------------------- */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: var(--color1);
+    transition-duration: .5s;
+}
+.container-claro{
+    background: #E3E3E3;
+}
+header{
+    width: 100vw;
+    height: var(--header-height);
+    background: var(--color3);
+    overflow-y: hidden;
+}
+.logo{
+    height: 65px;
+    width: 65px;
+    margin-left: 20px;
+    margin-top: 5px ;
+    /* left: -1390px;
+    top: -1087px; */
+    border-radius: 50%;
+    background: #D9D9D9;
+    position: absolute;
+}
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-y: hidden;
+}
+ul{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow-y: hidden;
+    height: 30px;
+}
+li{
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: var(--font-family);
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+    transition-duration: .2s;
+    margin-bottom: 5px;
+}
+
+
+.btn:hover{
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+    background: var(--color4);
+}
+.modo{
+    
+    background: url('assets/sol.png');
+    background-size:30px 30px;
+    background-position: 6px 0;
+    background-repeat: no-repeat;
+}
+
+.modo-claro{
+    background: url('assets/luna.png');
+    background-size:30px 30px;
+    background-position: 6px 0;
+    background-repeat: no-repeat;
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    background: var(--color2);
+    transition-duration: .5s;
+}
+.footer-claro{
+    background: var(--color4);
+}
+.card-contacto{
+    background: var(--color1);
+    width: 400px;
+    height: 210px;
+    margin-left: calc(25vw - 200px);
+    margin-top: calc(125px - 100px - 5px);
+    color:#fff;
+    transition-duration: .5s;
+}
+.card-contacto-claro {
+    background: #E3E3E3;
+    color: #000;
+}
+
+.card-contacto>p{
+    
+    font-family: var(--font-family);
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.redes{
+    display: grid;
+    grid-template-columns:133px 133px 133px;
+    margin-top: 10px;
+}
+.icono{
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+}
+
+/* -------------------------------------------- */
+/*                   INDEX                      */
+/* -------------------------------------------- */
+
+.section{
+    background: var(--color4);
+    height: 400px;
+    margin-top: 100px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 20px;
+    width: 1060px;
+    margin-left: calc(50vw - 530px);    
+    padding-top: 25px;
+}
+.card{
+    height: 350px;
+    width: 250px;
+    /* margin-left: 25px; */
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+}
+
+.mapa{
+    width: 400px;
+    height: 200px;
+    margin-left: calc(25vw - 200px);
+    margin-top: calc(125px - 100px);
+}   
+
+/* -------------------------------------------- */
+/*                   MENU                       */
+/* -------------------------------------------- */
+
+.menu{
+    width: 500px;
+    height: auto;
+    background: var(--color4);
+    margin-left: calc(50vw - 250px - 20px);
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 0px var(--color3);
+}
+.menu>h3{
+    text-align: center;
+    margin-top: 10px;
+    font-family: var(--font-family);
+    /* border: 2px solid var(--color2); */
+    border-radius: 10px;
+    background: var(--color3);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition-duration: .2s;
+}
+
+.menu>h3:hover{
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+}
+.menu>h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: var(--font-family);
+
+
+}
+
+
+/* -------------------------------------------- */
+/*                   Contacto                   */
+/* -------------------------------------------- */
+
+.formulario-container{
+    text-align: center;
+    height: auto;
+    padding-bottom: 20px;
+}
+.formulario-container>h2{
+    margin-top: 50px;
+    font-family: var(--font-family);
+}
+form{
+    margin-top: 25px;
+    text-align-last: left;
+    width: 600px;
+    margin-left: calc(50vw - 300px - 10px);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+form>input, form>textarea, form>.submit{
+    font-family:var(--font-family) ;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+.field-title{
+    font-family: var(--font-family);
+    margin-top: 10px;
+}
+
+.contact-field{
+    height: 30px;
+}
+
+.contact-field::placeholder{
+    color:#3A3A3A
+}
+
+.query{
+    height: 100px;
+    resize: none;
+    padding-top: 10px;
+}
+
+.submit {
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background: var(--color3);
+    margin-bottom: 5px; 
+}
+
+
+/* -------------------------------------------- */
+/*                   Detalle                    */
+/* -------------------------------------------- */
+
+
+.detalle {
+    background: none;
+    height: auto;
+}
+.detalle-card{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 800px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: calc(50vw - 400px - 20px);
+    border-radius: 10px;
+    font-family: var(--font-family);
+    background:var(--color4);
+}
+.menu-title{
+    margin-bottom: 15px;
+}
+.epoch-title{
+    margin-top: 15px;
+}
+
+
+
+@media (max-width: 1200px){
+    .card-container{
+        grid-template-columns: 250px 250px;
+        gap: 20px;
+        width: 520px;
+        margin-left: calc(50vw - 260px);    
+        padding-top: 25px;
+    }
+    .card-2, .card-3{
+        display: none;
+    }
+}
+  
